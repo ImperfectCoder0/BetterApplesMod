@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:iron_block"
+      "item": "minecraft:emerald"
     },
     "X": {
       "item": "minecraft:apple"
@@ -15,7 +15,7 @@
     "###"
   ],
   "result": {
-    "item": "betterapplemod:iron_apple"
+    "item": "betterapplemod:emerald_apple"
   },
   "show_notification": true
 }

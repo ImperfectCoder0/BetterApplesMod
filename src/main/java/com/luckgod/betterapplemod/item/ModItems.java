@@ -14,12 +14,14 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item IRON_APPLE = registerItem("iapple", new IApple(new FabricItemSettings().food(IApple.IAppleFood)));
-    public static final Item DIAMOND_APPLE = registerItem("dapple", new DApple(new FabricItemSettings().food(DApple.DAppleFood)));
+    public static final Item IRON_APPLE = registerItem("iron_apple", new IApple(new FabricItemSettings().food(IApple.IAppleFood)));
+    public static final Item DIAMOND_APPLE = registerItem("diamond_apple", new DApple(new FabricItemSettings().food(DApple.DAppleFood)));
+    public static final Item EMERALD_APPLE = registerItem("emerald_apple", new EApple(new FabricItemSettings().food(EApple.EAppleFood)));
 
     private static void addItemsToFoodsTabItemGroup(FabricItemGroupEntries entries){
         entries.add(IRON_APPLE);
         entries.add(DIAMOND_APPLE);
+        entries.add(EMERALD_APPLE);
     }
 
     public static void registerModItems(){
