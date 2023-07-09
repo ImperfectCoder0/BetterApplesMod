@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:emerald"
     },
     "X": {
       "item": "minecraft:apple"
@@ -15,7 +15,7 @@
     "###"
   ],
   "result": {
-    "item": "betterapplemod:diamond_apple"
+    "item": "luckyitems:emerald_apple"
   },
   "show_notification": true
 }

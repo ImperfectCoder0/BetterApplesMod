@@ -1,4 +1,4 @@
-package com.luckgod.betterapplemod.item;
+package com.luckgod.luckyitems.item;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -12,9 +12,10 @@ import net.minecraft.world.World;
 
 import java.util.Objects;
 
-public class DApple extends Item{
-    public static final FoodComponent DAppleFood = (new FoodComponent.Builder()).hunger(4).saturationModifier(9.6f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 60, 2), 1F).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 600, 0), 1F).build();
-    public DApple(Item.Settings settings) {
+public class IApple extends Item {
+
+    public static final FoodComponent IAppleFood = (new FoodComponent.Builder()).hunger(4).saturationModifier(9.6f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 80, 2), 1F).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 0), 1F).build();
+    public IApple(Settings settings) {
         super(settings);
     }
 
@@ -30,4 +31,6 @@ public class DApple extends Item{
         }
         return TypedActionResult.pass(user.getStackInHand(hand));
     }
+
+
 }

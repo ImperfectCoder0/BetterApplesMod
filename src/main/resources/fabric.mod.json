@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "betterapplemod",
+	"id": "luckyitems",
 	"version": "${version}",
-	"name": "Better Apples Mod",
+	"name": "Lucky Items Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,19 +12,19 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/betterapplemod/icon.png",
+	"icon": "assets/luckyitems/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.luckgod.betterapplemod.BetterApplesMod"
+			"com.luckgod.luckyitems.LuckyItemsMod"
 		],
-		"client": ["com.luckgod.betterapplemod.BetterApplesClient"],
+		"client": ["com.luckgod.luckyitems.LuckyItemsClient"],
 		"fabric-datagen": [
-			"com.luckgod.betterapplemod.BetterApplesDataGenerator"
+			"com.luckgod.luckyitems.LuckyItemsDataGenerator"
 		]
 	},
 	"mixins": [
-		"betterapplemod.mixins.json"
+		"luckyitems.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",

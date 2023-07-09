@@ -1,10 +1,9 @@
-package com.luckgod.betterapplemod.item;
+package com.luckgod.luckyitems.item;
 
-import com.luckgod.betterapplemod.BetterApplesMod;
+import com.luckgod.luckyitems.LuckyItemsMod;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 
 import net.minecraft.item.ItemGroups;
@@ -25,13 +24,13 @@ public class ModItems {
     }
 
     public static void registerModItems(){
-        BetterApplesMod.LOGGER.info("Mod items registered baby! " + BetterApplesMod.MOD_ID);
+        LuckyItemsMod.LOGGER.info("Mod items registered baby! " + LuckyItemsMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodsTabItemGroup);
     }
 
     private static Item registerItem(String name, Item item){
-        return Registry.register(Registries.ITEM, new Identifier(BetterApplesMod.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, new Identifier(LuckyItemsMod.MOD_ID, name), item);
 
     }
 }

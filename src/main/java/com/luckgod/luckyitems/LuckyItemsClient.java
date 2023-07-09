@@ -1,8 +1,8 @@
-package com.luckgod.betterapplemod;
+package com.luckgod.luckyitems;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class BetterApplesClient implements ClientModInitializer {
+public class LuckyItemsClient implements ClientModInitializer {
 
 
     @Override

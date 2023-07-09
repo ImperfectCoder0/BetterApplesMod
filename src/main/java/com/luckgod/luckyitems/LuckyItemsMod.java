@@ -1,17 +1,23 @@
-package com.luckgod.betterapplemod;
+package com.luckgod.luckyitems;
 
-import com.luckgod.betterapplemod.item.ModItems;
+import com.luckgod.luckyitems.effect.ChargedEffect;
+import com.luckgod.luckyitems.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class BetterApplesMod implements ModInitializer {
+public class LuckyItemsMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final String MOD_ID = "betterapplemod";
+	public static final String MOD_ID = "luckyitems";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final StatusEffect CHARGED = new ChargedEffect();
 
 	@Override
 	public void onInitialize() {
@@ -19,6 +25,7 @@ public class BetterApplesMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerModItems();
+		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "charged"), CHARGED);
 		LOGGER.info("Hello Fabric world!");
 	}
 }

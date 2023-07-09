@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.luckgod.betterapplemod.mixin",
+	"package": "com.luckgod.luckyitems.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"BetterApplesMixin"
+		"LuckyItemsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
