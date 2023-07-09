@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "betterapplemod",
+	"version": "${version}",
+	"name": "Better Apples Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/betterapplemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.luckgod.betterapplemod.BetterApplesMod"
+		],
+		"client": ["com.luckgod.betterapplemod.BetterApplesClient"],
+		"fabric-datagen": [
+			"com.luckgod.betterapplemod.BetterApplesDataGenerator"
+		]
+	},
+	"mixins": [
+		"betterapplemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
