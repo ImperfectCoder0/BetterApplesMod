@@ -4,9 +4,15 @@ import com.luckgod.luckyitems.effect.ChargedEffect;
 import com.luckgod.luckyitems.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
+import net.minecraft.block.BlockState;
+import net.minecraft.entity.LightningEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.predicate.entity.LightningBoltPredicate;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

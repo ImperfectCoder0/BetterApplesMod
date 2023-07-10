@@ -35,7 +35,7 @@ public class ChargedEffect  extends StatusEffect {
         Profiler profiler = world.getProfiler();
         profiler.push("thunder");
         BlockPos blockPos;
-        if (bl && world.isThundering() && world.random.nextInt((100000*world.getPlayers().size())/amplifier) == 0) {
+        if (bl && world.isThundering() && world.random.nextInt(255/(amplifier+1)) == 0) {
             blockPos = affectedEntity.getBlockPos();
             if (world.hasRain(blockPos)) {
 

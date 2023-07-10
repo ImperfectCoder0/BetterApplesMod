@@ -2,5 +2,7 @@
   "item.luckyitems.iron_apple": "Iron Apple",
   "item.luckyitems.diamond_apple": "Diamond Apple",
   "item.luckyitems.emerald_apple": "Emerald Apple",
+  "item.luckyitems.charged_pickaxe_t1": "Charged Pickaxe Level I",
+  "item.luckyitems.charged_pickaxe_t2": "Charged Pickaxe Level II",
   "effect.luckyitems.charged": "Charged"
 }

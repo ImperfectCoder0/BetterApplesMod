@@ -11,5 +11,7 @@ public class LuckyItemsMixin {
 	@Inject(at = @At("HEAD"), method = "loadWorld")
 	private void init(CallbackInfo info) {
 		// This code is injected into the start of MinecraftServer.loadWorld()V
+		System.out.println("Mixin was called!");
 	}
+
 }
