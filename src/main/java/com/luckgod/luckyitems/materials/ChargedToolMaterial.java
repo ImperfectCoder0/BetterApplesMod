@@ -12,7 +12,7 @@ public class ChargedToolMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 2023;
+        return 1450;
     }
 
     @Override

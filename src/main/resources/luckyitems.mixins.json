@@ -4,9 +4,9 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"LuckyItemsMixin",
-		"EntityMixin"
+		"EntityMixin",
+		"LivingEntityMixin"
 	],
-	"server": ["EntityMixin"],
 	"injectors": {
 		"defaultRequire": 1
 	}

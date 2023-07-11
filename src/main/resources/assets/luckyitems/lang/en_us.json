@@ -4,5 +4,9 @@
   "item.luckyitems.emerald_apple": "Emerald Apple",
   "item.luckyitems.charged_pickaxe_t1": "Charged Pickaxe Level I",
   "item.luckyitems.charged_pickaxe_t2": "Charged Pickaxe Level II",
+  "item.luckyitems.uncharged_pickaxe": "Uncharged Pickaxe",
+  "item.luckyitems.charged_pickaxe_t3": "Charged Pickaxe Level III",
+  "item.luckyitems.charged_pickaxe_t4": "Charged Pickaxe Level IV",
+  "item.luckyitems.overcharged_pickaxe": "Overcharged Pickaxe",
   "effect.luckyitems.charged": "Charged"
 }
